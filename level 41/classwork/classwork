@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport"
+     <title>DOCUMENT</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <ul class="ul">
+        <li>item 1</li>
+        <li>item 2</li>
+         <li>item 3</li>
+</ul>
+
+

@@ -1,0 +1,24 @@
+.conteiner{
+     background-color: aqua;
+     height: 40px;
+     width: 50 px
+}
+
+.conteiner:hover{
+    background-color: blue;
+    transform: translate(10px,10px);
+}
+
+
+#scaling{
+    width: 300px;
+    height: 60px;
+    background-color: aquamarine;
+    border-radius: 100px;
+    border: 2px solid lightcyan;
+    transition-duration: 200ms;
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-delay: 1;
+    transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,18 @@
+# split() - სტრიკონის დაყოფა სიად
+
+text = "hello world"
+words = text. split()
+print(words)
+
+# join() - ელემენტების გაერთიანება სტრიკონად
+
+result2 = ",".join(list)
+print(result2)
+
+#replace
+result3 = list.replace(10,6)
+print(result3)
+
+#strip
+result4 = list.strip()
+print(result4)

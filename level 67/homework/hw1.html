@@ -1,0 +1,61 @@
+const choiceDiv = document.getElementById("userChoice");
+const playerScoreP = document.getElementById("playerScoreP");
+const compScoreP = document.getElementById("compScoreP");
+const compChoiceP = document.getElementById("compChoiceP");
+const resultDiplay = document.getElementById("gameRes");
+const options = ["Rock", "Paper", "Scissors"]
+
+let playerScore = 1;
+let computerScore = 1;
+
+function gameLogic(clickEvent) {
+    let randomIndex = Math.floor(Math.random() * 3)
+    let computerChoice = options[randomIndex]
+
+    let playerChoice = clickEvent.target.textContent
+
+    compChoiceP.textContent = `Computer choice: ${computerChoice}`
+
+    if ((computerChoice === "Rock" && playerChoice === "Scissors") || (computerChoice === "Paper" && playerChoice === "Rock") || (computerChoice === "Scissors" && playerChoice === "Paper")) {
+        resultDiplay.textContent = "Computer Wins!"
+        computerScore++;
+    } else if (computerChoice === playerChoice) {
+        resultDiplay.textContent = "Draw!"
+    } else {
+        resultDiplay.textContent = "Player Wins!"
+        playerScore++;
+    }
+
+    playerScoreP.textContent = `Player Score: ${playerScore}`;
+    compScoreP.textContent = `Computer Score: ${computerScore}`;
+    
+}
+
+choiceDiv.onclick = gameLogic
+[10:50 PM]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <p id="playerScoreP">Your score: 1</p>
+    <p id="compScoreP">Computer score: 1</p>
+
+    <p id="compChoiceP">Computer choice:</p>
+
+    <button id="gameRes">Win/Loss</button>
+    <br><br>
+
+    <div id="userChoice">
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button id="Scissors">Scissors</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

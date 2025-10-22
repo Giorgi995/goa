@@ -1,0 +1,31 @@
+.conteiner {
+     display: flex;
+
+     
+  
+     border: 2px solid black;
+     align-items: center;
+     justify-content: end;
+     flex-direction: row;
+     gap: 20px;
+
+}
+
+#box1{
+    flex-shrink: 2;
+}
+
+.box {
+     flex-wrap: wrap;
+     color: blue;
+     flex-shrink: 1px;
+     flex-grow: 1px;
+     height: 200px;
+     width: 200px;
+     border: 2px solid gray;
+}
+
+
+
+
+

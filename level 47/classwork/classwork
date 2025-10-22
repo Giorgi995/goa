@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8>"
+     <meta name="viewport" content="initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="cw1.css"> 
+</head>
+<body>
+     <div id="conteiner">
+     <div class="box" id="div1"> Div 1</div>
+     <div class="box" id="div2"> Div 2</div>
+     <div class="box" id="div3"> Div 3</div>
+     </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

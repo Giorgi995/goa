@@ -8,9 +8,11 @@ const benefits = [
     "programirebis scavla",
     "motivacia da disciplina",
 ];
-const list = document.getElementById(benefitsList);
 
-benefits.forEach(item => {const li = document.createElement("li")
+const list = document.getElementById("benefitsList");
+
+benefits.forEach(item => {
+    const li = document.createElement("li")
     li.textContent = item;
     list.appendChild(li);
 });
@@ -21,7 +23,7 @@ const moreText = document.getElementById("moreText");
 
 moreBth.addEventListener("click", () =>
 {
-    if (moreText.style.display === "none")
+    if (moreText.style.display === "none"|| moreText.style.display ==="")
 {
     moreText.style.display = "block";
     moreBth.textContent = "damalva";

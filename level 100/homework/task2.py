@@ -13,3 +13,48 @@
 #დაალაგეთ სტუდენტები საშუალო ქულის მიხედვით (კლებადობით),
 #•    შედეგები გამოიტანეთ ფორმატირებული სახით
 
+students = {
+    "Giorgi": [85, 90, 78, 88, 92],
+    "Nino": [70, 75, 68, 72, 74],
+    "Luka": [95, 93, 97, 96, 94],
+    "Ana": [55, 60, 58, 62, 57],
+    "Mari": [40, 45, 42, 38, 41],
+}
+# sashualo kulis gamotvla
+def colculator_average(scores):
+    return sum(scores) / len(scores)
+# shepasebis dadgena sashualos mixedvit 
+def get_grade(average):
+    if 91 <= average <= 100:
+         return "A"
+    elif 81 <= average <= 90:
+         return "B"
+    elif 71 <= average <= 80:
+         return "C"
+    elif 61 <= average <= 70:
+         return "D"
+    elif 51 <= average <= 60:
+         return "E"
+    elif 41 <= average <= 50:
+         return "FX"
+    else:
+         return"F"
+    # konkretuli studentis mocebna
+    def find_top_student(students_dict):
+        top_student = ""
+        highest_avg = 0
+
+        for name, scores in students_dict.items():
+            avg = calculate_average(scores)
+            if avg > highest_avg:
+                highest_avg = avg 
+                top_student = name
+        return top_student, highest_avg
+    # yvela studentis monacemebis gamotana
+    print("studentebis shedegebi: /n")
+
+    for name, scores in students.items():
+         avg = calculator_average(scores)
+         grade = get_grade(avg)
+         print(f" studenti: {name}")
+         print  
